@@ -1,0 +1,8 @@
+[Sat Oct 17 13:49:39.251268 2026] [mpm_event:notice] [pid 210625:tid 137735548020608] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
+[Sat Oct 17 13:49:39.251401 2026] [core:notice] [pid 210625:tid 137735548020608] AH00094: Command line: 'apache2 -f /home/jothiswaranoh5717/show_tell/apache/conf/httpd.conf'
+[Sat Oct 17 13:50:41.071028 2026] [mpm_event:notice] [pid 210625:tid 137735548020608] AH00491: caught SIGTERM, shutting down
+[Sat Oct 17 14:02:08.384870 2026] [mpm_event:notice] [pid 213660:tid 132964529608576] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
+[Sat Oct 17 14:02:08.385015 2026] [core:notice] [pid 213660:tid 132964529608576] AH00094: Command line: '/usr/sbin/apache2 -f /home/jothiswaranoh5717/show_tell/apache/conf/httpd.conf -D FOREGROUND'
+[Sat Oct 17 14:19:01.935386 2026] [core:warn] [pid 4317:tid 133943018272640] AH00098: pid file /home/jothiswaranoh5717/show_tell/apache/run/apache.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 17 14:19:01.937202 2026] [mpm_event:notice] [pid 4317:tid 133943018272640] AH00489: Apache/2.4.58 (Ubuntu) configured -- resuming normal operations
+[Sat Oct 17 14:19:01.937241 2026] [core:notice] [pid 4317:tid 133943018272640] AH00094: Command line: '/usr/sbin/apache2 -f /home/jothiswaranoh5717/show_tell/apache/conf/httpd.conf -D FOREGROUND'

@@ -1,0 +1,20 @@
+
+[Unit]
+Description=HAT Converse FastAPI Backend
+After=network.target
+
+[Service]
+Type=simple
+User=jothiswaranoh5717
+WorkingDirectory=/home/jothiswaranoh5717/show_tell/api
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/home/jothiswaranoh5717/show_tell/api/.env
+ExecStart=/home/jothiswaranoh5717/show_tell/scripts/start-backend.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/jothiswaranoh5717/show_tell/logs/backend.log
+StandardError=append:/home/jothiswaranoh5717/show_tell/logs/backend.log
+
+[Install]
+WantedBy=multi-user.target
+
