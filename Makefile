@@ -66,3 +66,31 @@ clean: ## Clean up temporary files, build artifacts, and caches
 	find . -type d -name ".pytest_cache" -exec rm -rf {} +
 	rm -rf web_app/dist api/hat_app.db
 
+COMPOSE_PROD = docker compose --env-file .env.production -f compose.prod.yml
+
+.PHONY: prod-config prod-build prod-up prod-down prod-restart prod-logs prod-ps prod-migrate
+
+prod-config:
+	$(COMPOSE_PROD) config --quiet
+
+prod-build:
+	$(COMPOSE_PROD) build
+
+prod-up:
+	$(COMPOSE_PROD) up -d
+
+prod-down:
+	$(COMPOSE_PROD) down
+
+prod-restart:
+	$(COMPOSE_PROD) restart
+
+prod-logs:
+	$(COMPOSE_PROD) logs -f
+
+prod-ps:
+	$(COMPOSE_PROD) ps
+
+prod-migrate:
+	$(COMPOSE_PROD) exec backend alembic upgrade head
+

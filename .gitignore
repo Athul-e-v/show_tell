@@ -21,3 +21,5 @@ hat_app.db
 .DS_Store
 .vscode/
 .idea/
+.env.production
+backups/
