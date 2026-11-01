@@ -1,0 +1,39 @@
+
+# Git and OS files
+.git/
+**/.git/
+.DS_Store
+**/.DS_Store
+
+# Environment files and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+
+# Frontend dependencies and build output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Python environments and cache
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# Test and coverage output
+**/.coverage
+**/coverage/
+
+# Backups and local logs
+backups/
+**/backups/
+logs/
+**/logs/
+

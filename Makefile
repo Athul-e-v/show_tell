@@ -93,4 +93,21 @@ prod-ps:
 
 prod-migrate:
 	$(COMPOSE_PROD) exec backend alembic upgrade head
+LOCAL_COMPOSE = docker compose -f compose.yml
 
+.PHONY: local-up local-down local-build local-logs local-status
+
+local-up:
+	$(LOCAL_COMPOSE) up -d --build
+
+local-down:
+	$(LOCAL_COMPOSE) down
+
+local-build:
+	$(LOCAL_COMPOSE) build
+
+local-logs:
+	$(LOCAL_COMPOSE) logs -f
+
+local-status:
+	$(LOCAL_COMPOSE) ps
